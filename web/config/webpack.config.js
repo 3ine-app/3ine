@@ -18,7 +18,7 @@ module.exports = (config, { mode }) => {
         ogUrl: process.env.npm_package_homepage,
         ogTitle: process.env.npm_package_displayName,
         ogDescription: process.env.npm_package_description,
-        ogImage: '',
+        ogImage: '/images/icon-1080x1080.png',
         manifest: '/manifest.webmanifest',
         ...plugin.options.templateParameters,
       }
