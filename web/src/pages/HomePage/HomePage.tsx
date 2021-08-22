@@ -1,11 +1,9 @@
-import { Head } from '@redwoodjs/web'
+import { MetaTags } from '@redwoodjs/web'
 
 const HomePage = () => {
   return (
     <>
-      <Head>
-        <title>Home</title>
-      </Head>
+      <MetaTags title="Home" description="3ine.app home page"></MetaTags>
       <div className="mt-20 flex flex-col place-items-center">
         <img
           src="/android-chrome-192x192.png"

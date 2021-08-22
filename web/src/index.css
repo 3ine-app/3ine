@@ -12,10 +12,87 @@
  * END --- TAILWIND GENERATOR EDIT
  */
 
+:root {
+  --rounded-btn: 0.5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Gruppo', cursive;
+}
+
+@keyframes balance {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  30%,
+  60% {
+    transform: rotate(90deg);
+  }
+}
+
+.navbar-logo {
+  text-shadow: 0 2px 4px theme('colors.neutral'),
+    0 0 1em theme('colors.primary');
+}
+
+.navbar-logo span:nth-child(1) {
+  animation: balance 1.5s ease-out;
+  transform-origin: 5px 20px;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.about-title {
+  height: 140px;
+  @apply relative w-28 mx-auto;
+}
+.about-title > div {
+  @apply absolute overflow-hidden h-1/2 w-full;
+}
+
+.about-title > div:first-child {
+  @apply border-b-8 border-base-content font-extrabold text-6xl;
+}
+
+.about-title > div:last-child {
+  @apply bottom-0 text-primary opacity-80 text-5xl;
+}
+
+.about-title > div > div {
+  @apply absolute;
+}
+
+.about-title > div:first-child div {
+  animation: slideUp 1s;
+  animation-fill-mode: forwards;
+  transform: translate(0, 100%);
+  @apply bottom-0 delay-500;
+}
+
+.about-title > div:last-child div {
+  animation: slideDown 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  transform: translate(0, -100%);
+  @apply top-0;
 }
