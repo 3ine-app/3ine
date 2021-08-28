@@ -3,7 +3,12 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'open-sans': ['Open Sans', 'sans-serif'],
+        gruppo: ['Gruppo', 'cursive'],
+      },
+    },
   },
   variants: {
     extend: {},

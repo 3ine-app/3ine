@@ -65,7 +65,7 @@ const AboutPage = () => {
                 </div>
                 <span>{icon}</span>
               </div>
-              <p>{description}</p>
+              <p className="font-open-sans font-extralight">{description}</p>
             </div>
           </div>
         ))}
