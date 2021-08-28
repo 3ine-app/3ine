@@ -59,13 +59,13 @@ const AboutPage = () => {
           >
             <div className="card-body">
               <div className="flex items-center mb-6">
-                <div className="flex-1">
+                <div className="flex-1 font-gruppo">
                   <span className="ml-1 text-4xl font-serif">W</span>
                   <span className="text-2xl">{title}</span>
                 </div>
                 <span>{icon}</span>
               </div>
-              <p className="font-open-sans font-extralight">{description}</p>
+              <p className="font-extralight">{description}</p>
             </div>
           </div>
         ))}

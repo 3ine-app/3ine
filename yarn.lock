@@ -7219,10 +7219,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-daisyui@^1.11.1:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.11.1.tgz#6d0fdeb6f1e2015c98b7ddc36eb29a176e252c0b"
-  integrity sha512-re9r/yJ3SvoQ6MnteakFgLnie63l9hdg+X4/4/+g3Py9F1TL3yPGQrpszBYz6sM123IJsCMxQZdTPFlu85xP1Q==
+daisyui@1.14.0:
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-1.14.0.tgz#1d63658c0dd87f9795d333e7068cedbb0b0a52a6"
+  integrity sha512-50ccXdJMi0TS7raItKfUOJppPRvluOUCO4m6i7QPOVOdDZVP6awjqUoGmLzqFepO6b6QpVotswDvaXIKSZ/2aw==
 
 damerau-levenshtein@^1.0.6:
   version "1.0.7"

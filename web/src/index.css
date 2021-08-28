@@ -572,7 +572,7 @@ html {
 }
 
 body {
-  @apply font-gruppo;
+  @apply font-open-sans font-light;
 }
 
 @keyframes balance {
@@ -615,14 +615,15 @@ body {
 }
 .about-title {
   height: 140px;
-  @apply relative w-32 mx-auto;
+  @apply relative w-32 mx-auto font-gruppo;
 }
 .about-title > div {
   @apply absolute overflow-hidden h-1/2 w-full;
 }
 
 .about-title > div:first-child {
-  @apply border-b-8 border-base-content font-extrabold text-6xl;
+  border-bottom: 6px solid;
+  @apply border-base-content font-extrabold text-6xl;
 }
 
 .about-title > div:last-child {
