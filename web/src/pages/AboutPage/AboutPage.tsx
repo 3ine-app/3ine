@@ -31,16 +31,16 @@ const AboutPage = () => {
           </span>{' '}
           for <span className="text-shadow font-semibold font-serif">free</span>
           . Yes, everything you want or need to know about wine to help you
-          becoming savvy to pick good bottles for your lovely night with
-          significant one or friends at a fancy restaurant or event paving your
-          way to become professional in wine.
+          become savvy, to pick good bottles for your lovely night with your
+          significant one or friends at a fancy restaurant or even paving your
+          way to become professional.
         </div>
         <div>
-          Wine is beautiful and everyone is deserved to appreciate it without
-          costing you fortune. Getting understand about wine could be daunting
-          and quite often you will need to pay to start with. We are a group of
-          wine enthusiasts who are holding different levels of WSET certificates
-          and devoted to share our passion and knowledge to people for free and
+          Wine is beautiful and everyone deserves to appreciate it without
+          costing a fortune. Understanding about wine could be daunting and
+          quite often you will need to pay to start with. We are a group of wine
+          enthusiasts who are holding different levels of WSET certificates and
+          are devoted to share our passion and knowledge to people for free and
           bring more people into the wine world.
         </div>
       </div>
@@ -50,19 +50,19 @@ const AboutPage = () => {
             title: 'hy',
             icon: <GiGrapes size={40} />,
             description:
-              'Why wine tasted dry? why steak with full-bodied wine? why different glasses? why temperature matters? why aging process changes taste? Any questions you have about wine, we cover for you, no buzz words, no charges, all free.',
+              'Why does wine tasted dry? why pair steak with full-bodied wine? why using different glassware? why does temperature matters? why does the aging process change taste? Any questions you have about wine, we cover for you, no buzz words, no charges, all free.',
           },
           {
             title: 'here',
             icon: <FaWineBottle size={40} />,
             description:
-              'Buying wine can be frustrated especially searching bargains for specific wine region, grape, winery (château) or vintage. There are so many wine brokers out there selling different wines in different prices, you never get all the wines you want from the same broker in the cheapest price among them, thus we do it all for you.',
+              'Buying wine can be frustrating especially searching bargains for a specific wine region, grapes, winery (château) or vintage. There are so many wine brokers out there selling different wines at different prices, you will never get all the wines you want from the same broker at the cheapest price, thus we do it all for you.',
           },
           {
             title: 'hen',
             icon: <RiCalendarEventLine size={40} />,
             description:
-              'Do you know Pinot Palooza? Do you know Taste Champagne? Do you know Good Food and Wine Show? We collects all the wine events for you based on your current location, so you will not miss any.',
+              'Do you know Pinot Palooza? Do you know Taste Champagne? Do you know Good Food and Wine Show? We collect all the wine events for you based on your current location, so you will not miss out on any events.',
           },
         ].map(({ icon, title, description }, index) => (
           <div
