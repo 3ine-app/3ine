@@ -575,6 +575,19 @@ body {
   @apply font-open-sans font-light;
 }
 
+/* Custom utilities */
+@layer utilities {
+  @variants responsive {
+    .text-shadow {
+      text-shadow: 0 2px 4px theme('colors.neutral');
+    }
+
+    .text-shadow-light {
+      text-shadow: 0 2px 4px theme('colors.base-100');
+    }
+  }
+}
+
 @keyframes balance {
   0%,
   100% {
@@ -585,11 +598,6 @@ body {
   60% {
     transform: rotate(90deg);
   }
-}
-
-.navbar-logo {
-  text-shadow: 0 2px 4px theme('colors.neutral'),
-    0 0 1em theme('colors.primary');
 }
 
 .navbar-logo span:nth-child(1) {
