@@ -1,13 +1,16 @@
 import { MetaTags } from '@redwoodjs/web'
+import MediumEditor from 'src/components/MediumEditor/MediumEditor'
 
 const HomePage = () => {
   return (
-    <>
+    <div>
       <MetaTags title="Home" description="3ine.app home page"></MetaTags>
-      <div className="mt-10 text-5xl animate-pulse font-gruppo">
-        Coming soon!
-      </div>
-    </>
+      <MediumEditor
+        onSave={(serialized) => {
+          console.log(serialized)
+        }}
+      />
+    </div>
   )
 }
 
