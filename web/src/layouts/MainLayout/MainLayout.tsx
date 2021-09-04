@@ -26,7 +26,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   const current = new Date()
   const brandName = document
     .getElementsByTagName('meta')
-    .namedItem('brandName').content
+    .namedItem('brandName')?.content
   const logo = (
     <div className="flex items-center">
       <img
@@ -92,7 +92,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             </div>
           </div>
         </div>
-        <main className="flex-1 max-w-7xl mx-auto mt-14 sm:mt-20 px-6 xl:px-0">
+        <main className="flex-1 w-full max-w-7xl mx-auto mt-14 sm:mt-20 px-6 xl:px-0">
           {children}
         </main>
         <footer className="p-10 footer flex items-center flex-col-reverse sm:flex-row bg-gradient-to-t from-neutral to-base-100">
