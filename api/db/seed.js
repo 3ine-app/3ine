@@ -14,26 +14,23 @@ const db = new PrismaClient()
  * @see https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#createmany
  */
 async function main() {
-  console.warn('Please define your seed data.')
+  const data = [
+    {
+      question:
+        'What range of colour descriptors can be used to describe white wines?',
+      answer: 'Lemon, gold and amber',
+      tags: 'wset,level 2,white,colour',
+    },
+  ]
 
-  // // Change to match your data model and seeding needs
-  // const data = [
-  //   { name: 'alice', email: 'alice@example.com' },
-  //   { name: 'mark', email: 'mark@example.com' },
-  //   { name: 'jackie', email: 'jackie@example.com' },
-  //   { name: 'bob', email: 'bob@example.com' },
-  // ]
-
-  // // Note: if using PostgreSQL, using `createMany` to insert multiple records is much faster
-  // // @see: https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#createmany
-  // return Promise.all(
-  //   data.map(async (user) => {
-  //     const record = await db.user.create({
-  //       data: { name: user.name, email: user.email },
-  //     })
-  //     console.log(record)
-  //   })
-  // )
+  return Promise.all(
+    data.map(async (flashcard) => {
+      const record = await db.flashCard.create({
+        data: flashcard,
+      })
+      console.log(record)
+    })
+  )
 }
 
 main()
