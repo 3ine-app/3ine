@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { FaTwitter } from 'react-icons/fa'
 import { FiMenu } from 'react-icons/fi'
 import { IoMdClose } from 'react-icons/io'
+import Dropdown from 'src/components/Dropdown/Dropdown'
 
 type MainLayoutProps = {
   children?: React.ReactNode
@@ -56,13 +57,21 @@ const MainLayout = ({ children }: MainLayoutProps) => {
               <span>ine</span>
             </Link>
             <div className="hidden flex-1 text-right sm:block">
-              <Link
-                className="btn btn-sm btn-ghost mr-2 text-base"
-                to={routes.home()}
+              <Dropdown
+                labelClass="btn btn-sm btn-ghost mr-2 text-base"
+                menuClass="p-2 rounded-box w-52 bg-base-100"
+                label={
+                  <>
+                    <span className="font-serif">W</span>
+                    <span className="lowercase">hy</span>
+                  </>
+                }
               >
-                <span className="font-serif">W</span>
-                <span className="lowercase">hy</span>
-              </Link>
+                <Link className="btn btn-ghost" to={routes.flashcards()}>
+                  Flashcards
+                </Link>
+              </Dropdown>
+
               <Link
                 className="btn btn-sm btn-ghost mr-2 text-base"
                 to={routes.home()}
