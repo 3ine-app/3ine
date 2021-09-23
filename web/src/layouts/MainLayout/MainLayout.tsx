@@ -1,9 +1,11 @@
-import { Link, NavLink, routes, useMatch } from '@redwoodjs/router'
-import { FC } from 'react'
+import { Link, NavLink, routes, useLocation, useMatch } from '@redwoodjs/router'
+import { FC, useMemo } from 'react'
 import { FaTwitter } from 'react-icons/fa'
 import { FiMenu } from 'react-icons/fi'
 import { IoMdClose } from 'react-icons/io'
 import Dropdown from 'src/components/Dropdown/Dropdown'
+import SubMenu from 'src/components/SubMenu/SubMenu'
+import { mergeClassName } from 'src/utils'
 
 type MainLayoutProps = {
   children?: React.ReactNode
@@ -15,9 +17,7 @@ const CustomNavLink: FC<{ to: string }> = ({ to, children }) => {
   return (
     <li>
       <Link to={to}>
-        <span className={match ? 'border-b-2 border-primary-focus' : ''}>
-          {children}
-        </span>
+        <span className={match ? 'text-shadow' : ''}>{children}</span>
       </Link>
     </li>
   )
@@ -25,9 +25,14 @@ const CustomNavLink: FC<{ to: string }> = ({ to, children }) => {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   const current = new Date()
+  const { pathname } = useLocation()
   const brandName = document
     .getElementsByTagName('meta')
     .namedItem('brandName')?.content
+  const isWhyActive = useMemo(
+    () => ['/flashcards'].includes(pathname),
+    [pathname]
+  )
   const logo = (
     <div className="flex items-center">
       <img
@@ -58,8 +63,12 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             </Link>
             <div className="hidden flex-1 text-right sm:block">
               <Dropdown
-                labelClass="btn btn-sm btn-ghost mr-2 text-base"
-                menuClass="p-2 rounded-box w-52 bg-base-100"
+                menuClass="rounded-xl w-52 bg-base-100"
+                labelClass={mergeClassName(
+                  isWhyActive &&
+                    'bg-neutral hover:bg-neutral text-neutral-content',
+                  'btn btn-sm btn-ghost mr-2 text-base'
+                )}
                 label={
                   <>
                     <span className="font-serif">W</span>
@@ -67,9 +76,9 @@ const MainLayout = ({ children }: MainLayoutProps) => {
                   </>
                 }
               >
-                <Link className="btn btn-ghost" to={routes.flashcards()}>
+                <NavLink activeClassName="text-shadow" to={routes.flashcards()}>
                   Flashcards
-                </Link>
+                </NavLink>
               </Dropdown>
 
               <Link
@@ -141,10 +150,19 @@ const MainLayout = ({ children }: MainLayoutProps) => {
               </label>
             </div>
           </li>
-          <CustomNavLink to={routes.home()}>
-            <span className="font-serif">W</span>
-            <span className="lowercase">hy</span>
-          </CustomNavLink>
+          <SubMenu
+            isOpen={isWhyActive}
+            parent={
+              <a href="/">
+                <span className="font-serif">W</span>
+                <span className="lowercase">hy</span>
+              </a>
+            }
+          >
+            <ul className="menu">
+              <CustomNavLink to={routes.flashcards()}>Flashcards</CustomNavLink>
+            </ul>
+          </SubMenu>
           <CustomNavLink to={routes.home()}>
             <span className="font-serif">W</span>
             <span className="lowercase">here</span>
