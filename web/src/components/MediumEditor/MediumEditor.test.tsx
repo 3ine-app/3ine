@@ -4,7 +4,7 @@ import MediumEditor from './MediumEditor'
 describe('MediumEditor', () => {
   it('renders successfully', () => {
     expect(() => {
-      expect(render(<MediumEditor />)).toMatchSnapshot()
+      render(<MediumEditor />)
     }).not.toThrow()
   })
 })
