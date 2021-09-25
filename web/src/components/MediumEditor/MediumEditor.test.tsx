@@ -1,5 +1,4 @@
 import { render } from '@redwoodjs/testing/web'
-
 import MediumEditor from './MediumEditor'
 
 describe('MediumEditor', () => {

@@ -10,6 +10,7 @@ import {
   FaTwitter,
 } from 'react-icons/fa'
 import { GiSaveArrow } from 'react-icons/gi'
+import Dropdown from '../Dropdown/Dropdown'
 
 interface MediumEditorProps extends HTMLAttributes<HTMLDivElement> {
   content?: string
@@ -42,13 +43,6 @@ const MediumEditor: FC<MediumEditorProps> = ({
     if (serialized) {
       onSave?.(Object.values(serialized)?.[0]?.['value'])
     }
-  }
-
-  // A workaround of click and focus behavior not working on Safari
-  // https://gist.github.com/cvrebert/68659d0333a578d75372
-  const handleClickFocus = (e: MouseEvent<HTMLButtonElement>) => {
-    // Set button focus onClick since button can NOT be focused by clicking (even with tabindex)
-    e.currentTarget.focus()
   }
 
   useEffect(
@@ -111,41 +105,25 @@ const MediumEditor: FC<MediumEditorProps> = ({
         </div>
         <div className="flex flex-1 justify-end">
           {disabled ? (
-            <div className="dropdown dropdown-hover dropdown-left dropdown-end">
-              <button
-                tabIndex={0}
-                onClick={handleClickFocus}
-                className="btn btn-xs btn-ghost"
-              >
-                <FaShareAlt size="18" className="drop-shadow-lg" />
+            <Dropdown
+              labelClass="btn-xs btn-ghost"
+              menuClass="p-1 horizontal w-min rounded-md"
+              dropdownClass="dropdown-hover dropdown-left dropdown-end"
+              label={<FaShareAlt size="18" className="drop-shadow-lg" />}
+            >
+              <button className="btn btn-xs btn-ghost">
+                <FaTwitter size="18" className="drop-shadow-lg" />
               </button>
-              <ul
-                // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
-                tabIndex={0}
-                className="p-1 shadow menu dropdown-content rounded-md horizontal w-min"
-              >
-                <li>
-                  <button className="btn btn-xs btn-ghost">
-                    <FaTwitter size="18" className="drop-shadow-lg" />
-                  </button>
-                </li>
-                <li>
-                  <button className="btn btn-xs btn-ghost">
-                    <FaFacebook size="18" className="drop-shadow-lg" />
-                  </button>
-                </li>
-                <li>
-                  <button className="btn btn-xs btn-ghost">
-                    <FaLinkedin size="18" className="drop-shadow-lg" />
-                  </button>
-                </li>
-                <li>
-                  <button className="btn btn-xs btn-ghost">
-                    <FaLink size="18" className="drop-shadow-lg" />
-                  </button>
-                </li>
-              </ul>
-            </div>
+              <button className="btn btn-xs btn-ghost">
+                <FaFacebook size="18" className="drop-shadow-lg" />
+              </button>
+              <button className="btn btn-xs btn-ghost">
+                <FaLinkedin size="18" className="drop-shadow-lg" />
+              </button>
+              <button className="btn btn-xs btn-ghost">
+                <FaLink size="18" className="drop-shadow-lg" />
+              </button>
+            </Dropdown>
           ) : (
             <div>
               <button className="btn btn-xs btn-ghost" onClick={handleSave}>
