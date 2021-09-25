@@ -902,6 +902,18 @@ body {
   .flashcard {
     @apply w-96;
   }
+  .flashcards.carousel {
+    width: 440px;
+  }
+}
+
+.flashcards.carousel {
+  height: 480px;
+  @apply shadow-xl;
+}
+
+.flashcards.carousel .flashcard {
+  width: 90%;
 }
 
 .flashcard-body {

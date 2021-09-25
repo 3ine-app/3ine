@@ -1,0 +1,467 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MediumEditor renders successfully 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="flex py-4 flex-col-reverse gap-1 sm:gap-0 sm:flex-row sm:items-center"
+        >
+          <div
+            class="flex items-center text-sm"
+          >
+            <div
+              class="avatar online mr-2"
+            >
+              <div
+                class="rounded-btn w-7 h-7"
+              >
+                <img
+                  alt="Avatar"
+                  loading="lazy"
+                  src="images/icon-96x96.png"
+                />
+              </div>
+            </div>
+            <div
+              class="text-info mr-2 font-semibold"
+            >
+              Jeremy House
+            </div>
+            <div
+              class="text-gray-600 "
+            >
+              25/09/2021
+            </div>
+          </div>
+          <div
+            class="flex flex-1 justify-end"
+          >
+            <div>
+              <button
+                class="btn btn-xs btn-ghost"
+              >
+                <svg
+                  class="drop-shadow-lg"
+                  fill="currentColor"
+                  height="18"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M224 30v256h-64l96 128 96-128h-64V30h-64zM32 434v48h448v-48H32z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn btn-xs btn-ghost"
+              >
+                <svg
+                  class="drop-shadow-lg"
+                  fill="currentColor"
+                  height="18"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M464 0c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48H176c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h288M176 416c-44.112 0-80-35.888-80-80V128H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-48H176z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn btn-xs btn-ghost"
+              >
+                <svg
+                  class="drop-shadow-lg"
+                  fill="currentColor"
+                  height="18"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-multiline="true"
+          class="medium-editor-wrapper outline-none prose max-w-full undefined medium-editor-element medium-editor-placeholder"
+          contenteditable="true"
+          data-medium-editor-editor-index="1"
+          data-medium-editor-element="true"
+          data-placeholder="Start writing..."
+          medium-editor-index="6b31389e-4004-4c82-5d62-557eebffd094"
+          role="textbox"
+          spellcheck="true"
+        />
+      </div>
+    </div>
+    <div
+      class="medium-editor-anchor-preview"
+      id="medium-editor-anchor-preview-1"
+    >
+      <div
+        class="medium-editor-toolbar-anchor-preview"
+        id="medium-editor-toolbar-anchor-preview"
+      >
+            
+        <a
+          class="medium-editor-toolbar-anchor-preview-inner"
+        />
+      </div>
+    </div>
+    <div
+      class="medium-editor-toolbar medium-editor-stalker-toolbar"
+      id="medium-editor-toolbar-1"
+    >
+      <ul
+        class="medium-editor-toolbar-actions"
+        id="medium-editor-toolbar-actions1"
+        style="display: block;"
+      >
+        <li>
+          <button
+            aria-label="bold"
+            class="medium-editor-action medium-editor-action-bold medium-editor-button-first"
+            data-action="bold"
+            title="bold"
+          >
+            <b>
+              B
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="italic"
+            class="medium-editor-action medium-editor-action-italic"
+            data-action="italic"
+            title="italic"
+          >
+            <b>
+              <i>
+                I
+              </i>
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="underline"
+            class="medium-editor-action medium-editor-action-underline"
+            data-action="underline"
+            title="underline"
+          >
+            <b>
+              <u>
+                U
+              </u>
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="unordered list"
+            class="medium-editor-action medium-editor-action-unorderedlist"
+            data-action="insertunorderedlist"
+            title="unordered list"
+          >
+            <b>
+              •
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="ordered list"
+            class="medium-editor-action medium-editor-action-orderedlist"
+            data-action="insertorderedlist"
+            title="ordered list"
+          >
+            <b>
+              1.
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="header type one"
+            class="medium-editor-action medium-editor-action-h1"
+            data-action="append-h1"
+            title="header type one"
+          >
+            <b>
+              H1
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="header type two"
+            class="medium-editor-action medium-editor-action-h2"
+            data-action="append-h2"
+            title="header type two"
+          >
+            <b>
+              H2
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="header type three"
+            class="medium-editor-action medium-editor-action-h3"
+            data-action="append-h3"
+            title="header type three"
+          >
+            <b>
+              H3
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="header type four"
+            class="medium-editor-action medium-editor-action-h4"
+            data-action="append-h4"
+            title="header type four"
+          >
+            <b>
+              H4
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="header type five"
+            class="medium-editor-action medium-editor-action-h5"
+            data-action="append-h5"
+            title="header type five"
+          >
+            <b>
+              H5
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="blockquote"
+            class="medium-editor-action medium-editor-action-quote"
+            data-action="append-blockquote"
+            title="blockquote"
+          >
+            <b>
+              “
+            </b>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-label="link"
+            class="medium-editor-action medium-editor-action-anchor medium-editor-button-last"
+            data-action="createLink"
+            title="link"
+          >
+            <b>
+              #
+            </b>
+          </button>
+        </li>
+      </ul>
+      <div
+        class="medium-editor-toolbar-form"
+        id="medium-editor-toolbar-form-anchor-1"
+      >
+        <input
+          class="medium-editor-toolbar-input"
+          placeholder="Paste link"
+          type="text"
+        />
+        <a
+          class="medium-editor-toolbar-save"
+          href="#"
+        >
+          ✓
+        </a>
+        <a
+          class="medium-editor-toolbar-close"
+          href="#"
+        >
+          ×
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="flex py-4 flex-col-reverse gap-1 sm:gap-0 sm:flex-row sm:items-center"
+      >
+        <div
+          class="flex items-center text-sm"
+        >
+          <div
+            class="avatar online mr-2"
+          >
+            <div
+              class="rounded-btn w-7 h-7"
+            >
+              <img
+                alt="Avatar"
+                loading="lazy"
+                src="images/icon-96x96.png"
+              />
+            </div>
+          </div>
+          <div
+            class="text-info mr-2 font-semibold"
+          >
+            Jeremy House
+          </div>
+          <div
+            class="text-gray-600 "
+          >
+            25/09/2021
+          </div>
+        </div>
+        <div
+          class="flex flex-1 justify-end"
+        >
+          <div>
+            <button
+              class="btn btn-xs btn-ghost"
+            >
+              <svg
+                class="drop-shadow-lg"
+                fill="currentColor"
+                height="18"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M224 30v256h-64l96 128 96-128h-64V30h-64zM32 434v48h448v-48H32z"
+                />
+              </svg>
+            </button>
+            <button
+              class="btn btn-xs btn-ghost"
+            >
+              <svg
+                class="drop-shadow-lg"
+                fill="currentColor"
+                height="18"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M464 0c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48H176c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h288M176 416c-44.112 0-80-35.888-80-80V128H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-48H176z"
+                />
+              </svg>
+            </button>
+            <button
+              class="btn btn-xs btn-ghost"
+            >
+              <svg
+                class="drop-shadow-lg"
+                fill="currentColor"
+                height="18"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-multiline="true"
+        class="medium-editor-wrapper outline-none prose max-w-full undefined medium-editor-element medium-editor-placeholder"
+        contenteditable="true"
+        data-medium-editor-editor-index="1"
+        data-medium-editor-element="true"
+        data-placeholder="Start writing..."
+        medium-editor-index="6b31389e-4004-4c82-5d62-557eebffd094"
+        role="textbox"
+        spellcheck="true"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

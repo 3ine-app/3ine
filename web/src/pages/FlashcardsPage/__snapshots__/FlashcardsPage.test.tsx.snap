@@ -1,0 +1,864 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlashcardsPage renders successfully 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="carousel rounded-box shadow-2xl"
+      >
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary-focus"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                favorite
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content animate-pulse"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                favorite
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content animate-pulse"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                favorite
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                random
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                random
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                random
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                tasting
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                tasting
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                tasting
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                pairing
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                pairing
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                pairing
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                winemaking
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                winemaking
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                winemaking
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                white
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                white
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                white
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                red
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                red
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                red
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                sparkling
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                sparkling
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                sparkling
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                fortified
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                fortified
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                fortified
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                region
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                region
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                region
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                country
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                country
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                country
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:flex sm:justify-center my-20"
+      >
+        <div
+          class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+        >
+          <div
+            class="flashcard bg-base-100 mx-auto mt-5 rounded-xl animate-pulse"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="carousel rounded-box shadow-2xl"
+    >
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary-focus"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              favorite
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content animate-pulse"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              favorite
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content animate-pulse"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              favorite
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              random
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              random
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              random
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              tasting
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              tasting
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              tasting
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              pairing
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              pairing
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              pairing
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              winemaking
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              winemaking
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              winemaking
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              white
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              white
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              white
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              red
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              red
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              red
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              sparkling
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              sparkling
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              sparkling
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              fortified
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              fortified
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              fortified
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              region
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              region
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              region
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              country
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              country
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              country
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sm:flex sm:justify-center my-20"
+    >
+      <div
+        class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+      >
+        <div
+          class="flashcard bg-base-100 mx-auto mt-5 rounded-xl animate-pulse"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
