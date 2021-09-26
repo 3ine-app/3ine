@@ -55,6 +55,41 @@ Object {
               <div
                 class="py-6 text-shadow capitalize"
               >
+                wine 101
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                wine 101
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                wine 101
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
                 random
               </div>
             </button>
@@ -74,6 +109,111 @@ Object {
                 class="py-6 capitalize"
               >
                 random
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                storage
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                storage
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                storage
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                food pairing
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                food pairing
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                food pairing
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="carousel-item"
+        >
+          <div
+            class="stack my-8 mx-2 font-gruppo"
+          >
+            <button
+              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+            >
+              <div
+                class="py-6 text-shadow capitalize"
+              >
+                temperature
+              </div>
+            </button>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                temperature
+              </div>
+            </div>
+            <div
+              class="text-center w-36 card bg-primary text-primary-content"
+            >
+              <div
+                class="py-6 capitalize"
+              >
+                temperature
               </div>
             </div>
           </div>
@@ -125,7 +265,7 @@ Object {
               <div
                 class="py-6 text-shadow capitalize"
               >
-                pairing
+                wine making
               </div>
             </button>
             <div
@@ -134,7 +274,7 @@ Object {
               <div
                 class="py-6 capitalize"
               >
-                pairing
+                wine making
               </div>
             </div>
             <div
@@ -143,42 +283,7 @@ Object {
               <div
                 class="py-6 capitalize"
               >
-                pairing
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="carousel-item"
-        >
-          <div
-            class="stack my-8 mx-2 font-gruppo"
-          >
-            <button
-              class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
-            >
-              <div
-                class="py-6 text-shadow capitalize"
-              >
-                winemaking
-              </div>
-            </button>
-            <div
-              class="text-center w-36 card bg-primary text-primary-content"
-            >
-              <div
-                class="py-6 capitalize"
-              >
-                winemaking
-              </div>
-            </div>
-            <div
-              class="text-center w-36 card bg-primary text-primary-content"
-            >
-              <div
-                class="py-6 capitalize"
-              >
-                winemaking
+                wine making
               </div>
             </div>
           </div>
@@ -458,6 +563,41 @@ Object {
             <div
               class="py-6 text-shadow capitalize"
             >
+              wine 101
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              wine 101
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              wine 101
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
               random
             </div>
           </button>
@@ -477,6 +617,111 @@ Object {
               class="py-6 capitalize"
             >
               random
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              storage
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              storage
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              storage
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              food pairing
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              food pairing
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              food pairing
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel-item"
+      >
+        <div
+          class="stack my-8 mx-2 font-gruppo"
+        >
+          <button
+            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
+          >
+            <div
+              class="py-6 text-shadow capitalize"
+            >
+              temperature
+            </div>
+          </button>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              temperature
+            </div>
+          </div>
+          <div
+            class="text-center w-36 card bg-primary text-primary-content"
+          >
+            <div
+              class="py-6 capitalize"
+            >
+              temperature
             </div>
           </div>
         </div>
@@ -528,7 +773,7 @@ Object {
             <div
               class="py-6 text-shadow capitalize"
             >
-              pairing
+              wine making
             </div>
           </button>
           <div
@@ -537,7 +782,7 @@ Object {
             <div
               class="py-6 capitalize"
             >
-              pairing
+              wine making
             </div>
           </div>
           <div
@@ -546,42 +791,7 @@ Object {
             <div
               class="py-6 capitalize"
             >
-              pairing
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="carousel-item"
-      >
-        <div
-          class="stack my-8 mx-2 font-gruppo"
-        >
-          <button
-            class="rounded-xl text-primary-content hover:bg-primary-focus bg-primary"
-          >
-            <div
-              class="py-6 text-shadow capitalize"
-            >
-              winemaking
-            </div>
-          </button>
-          <div
-            class="text-center w-36 card bg-primary text-primary-content"
-          >
-            <div
-              class="py-6 capitalize"
-            >
-              winemaking
-            </div>
-          </div>
-          <div
-            class="text-center w-36 card bg-primary text-primary-content"
-          >
-            <div
-              class="py-6 capitalize"
-            >
-              winemaking
+              wine making
             </div>
           </div>
         </div>

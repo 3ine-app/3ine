@@ -337,7 +337,7 @@ Object {
               class="flashcard-body"
             >
               <div
-                class="flashcard-question bg-base-100 font-mono"
+                class="flashcard-question bg-base-100 font-open-sans"
               >
                 <p>
                   What range of colour descriptors can be used to describe white wines?
@@ -361,7 +361,7 @@ Object {
                 </div>
               </div>
               <div
-                class="flashcard-answer bg-base-100 font-mono"
+                class="flashcard-answer bg-base-100 font-open-sans"
               >
                 <p>
                   Lemon, gold and amber
@@ -380,7 +380,7 @@ Object {
               class="flashcard-body"
             >
               <div
-                class="flashcard-question bg-base-100 font-mono"
+                class="flashcard-question bg-base-100 font-open-sans"
               >
                 <p>
                   What range of colour descriptors can be used to describe white wines?
@@ -404,7 +404,7 @@ Object {
                 </div>
               </div>
               <div
-                class="flashcard-answer bg-base-100 font-mono"
+                class="flashcard-answer bg-base-100 font-open-sans"
               >
                 <p>
                   Lemon, gold and amber
@@ -423,7 +423,7 @@ Object {
               class="flashcard-body"
             >
               <div
-                class="flashcard-question bg-base-100 font-mono"
+                class="flashcard-question bg-base-100 font-open-sans"
               >
                 <p>
                   What range of colour descriptors can be used to describe white wines?
@@ -447,7 +447,7 @@ Object {
                 </div>
               </div>
               <div
-                class="flashcard-answer bg-base-100 font-mono"
+                class="flashcard-answer bg-base-100 font-open-sans"
               >
                 <p>
                   Lemon, gold and amber
@@ -466,7 +466,7 @@ Object {
               class="flashcard-body"
             >
               <div
-                class="flashcard-question bg-base-100 font-mono"
+                class="flashcard-question bg-base-100 font-open-sans"
               >
                 <p>
                   What range of colour descriptors can be used to describe white wines?
@@ -490,7 +490,7 @@ Object {
                 </div>
               </div>
               <div
-                class="flashcard-answer bg-base-100 font-mono"
+                class="flashcard-answer bg-base-100 font-open-sans"
               >
                 <p>
                   Lemon, gold and amber
@@ -509,7 +509,7 @@ Object {
               class="flashcard-body"
             >
               <div
-                class="flashcard-question bg-base-100 font-mono"
+                class="flashcard-question bg-base-100 font-open-sans"
               >
                 <p>
                   What range of colour descriptors can be used to describe white wines?
@@ -533,7 +533,7 @@ Object {
                 </div>
               </div>
               <div
-                class="flashcard-answer bg-base-100 font-mono"
+                class="flashcard-answer bg-base-100 font-open-sans"
               >
                 <p>
                   Lemon, gold and amber
@@ -578,7 +578,7 @@ Object {
             class="flashcard-body"
           >
             <div
-              class="flashcard-question bg-base-100 font-mono"
+              class="flashcard-question bg-base-100 font-open-sans"
             >
               <p>
                 What range of colour descriptors can be used to describe white wines?
@@ -602,7 +602,7 @@ Object {
               </div>
             </div>
             <div
-              class="flashcard-answer bg-base-100 font-mono"
+              class="flashcard-answer bg-base-100 font-open-sans"
             >
               <p>
                 Lemon, gold and amber
@@ -621,7 +621,7 @@ Object {
             class="flashcard-body"
           >
             <div
-              class="flashcard-question bg-base-100 font-mono"
+              class="flashcard-question bg-base-100 font-open-sans"
             >
               <p>
                 What range of colour descriptors can be used to describe white wines?
@@ -645,7 +645,7 @@ Object {
               </div>
             </div>
             <div
-              class="flashcard-answer bg-base-100 font-mono"
+              class="flashcard-answer bg-base-100 font-open-sans"
             >
               <p>
                 Lemon, gold and amber
@@ -664,7 +664,7 @@ Object {
             class="flashcard-body"
           >
             <div
-              class="flashcard-question bg-base-100 font-mono"
+              class="flashcard-question bg-base-100 font-open-sans"
             >
               <p>
                 What range of colour descriptors can be used to describe white wines?
@@ -688,7 +688,7 @@ Object {
               </div>
             </div>
             <div
-              class="flashcard-answer bg-base-100 font-mono"
+              class="flashcard-answer bg-base-100 font-open-sans"
             >
               <p>
                 Lemon, gold and amber
@@ -707,7 +707,7 @@ Object {
             class="flashcard-body"
           >
             <div
-              class="flashcard-question bg-base-100 font-mono"
+              class="flashcard-question bg-base-100 font-open-sans"
             >
               <p>
                 What range of colour descriptors can be used to describe white wines?
@@ -731,7 +731,7 @@ Object {
               </div>
             </div>
             <div
-              class="flashcard-answer bg-base-100 font-mono"
+              class="flashcard-answer bg-base-100 font-open-sans"
             >
               <p>
                 Lemon, gold and amber
@@ -750,7 +750,7 @@ Object {
             class="flashcard-body"
           >
             <div
-              class="flashcard-question bg-base-100 font-mono"
+              class="flashcard-question bg-base-100 font-open-sans"
             >
               <p>
                 What range of colour descriptors can be used to describe white wines?
@@ -774,7 +774,7 @@ Object {
               </div>
             </div>
             <div
-              class="flashcard-answer bg-base-100 font-mono"
+              class="flashcard-answer bg-base-100 font-open-sans"
             >
               <p>
                 Lemon, gold and amber

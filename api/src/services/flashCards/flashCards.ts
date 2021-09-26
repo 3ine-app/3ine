@@ -4,8 +4,8 @@ import { db } from 'src/lib/db'
 
 type GetFlashCardsPayload = Omit<
   Parameters<typeof db.flashCard.findMany>[0],
-  'select' | 'where'
-> & { tags?: Array<string> }
+  'select' | 'where' | 'distinct'
+> & { tags?: string[] }
 type CreateFlashCardPayload = Omit<
   Parameters<typeof db.flashCard.create>[0],
   'select'
@@ -21,13 +21,14 @@ export const beforeResolver = (rules: BeforeResolverSpecType) => {
   rules.add(requireAuth)
 }
 
-export const flashCards = ({ tags, ...args }: GetFlashCardsPayload) => {
+export const flashCards = (args?: GetFlashCardsPayload) => {
+  const { tags, ...rest } = args || {}
   const where = tags
     ? { OR: tags.map((tag) => ({ tags: { contains: tag } })) }
     : {}
 
   return db.flashCard.findMany({
-    ...args,
+    ...rest,
     where,
   })
 }
