@@ -9,7 +9,7 @@ export const schema = gql`
   }
 
   type Query {
-    flashCards(take: Int): [FlashCard!]!
+    flashCards(tags: [String!], take: Int): [FlashCard!]!
   }
 
   type Mutation {

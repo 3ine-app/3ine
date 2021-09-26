@@ -924,7 +924,7 @@ body {
 }
 
 .flashcard-body > div {
-  @apply w-full h-full absolute p-10 rounded-2xl overflow-auto shadow-lg;
+  @apply w-full h-full absolute p-10 font-medium rounded-2xl overflow-auto shadow-lg;
   transition: all 350ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
@@ -933,11 +933,12 @@ body {
 }
 
 .flashcard-question {
+  @apply text-2xl sm:text-3xl;
   transform: rotateY(0deg) translateZ(160px);
 }
 
 .flashcard-answer {
-  @apply opacity-10;
+  @apply text-lg sm:text-xl opacity-10;
   transform: rotateY(90deg) translateZ(160px);
 }
 

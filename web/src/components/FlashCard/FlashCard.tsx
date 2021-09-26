@@ -16,13 +16,13 @@ const FlashCard: FC<FlashCardProps> = ({
     <div className="flashcard" {...rest}>
       <div className="flashcard-body">
         <div className={`flashcard-question ${className ?? ''}`}>
-          <p>{question}</p>
+          <p dangerouslySetInnerHTML={{ __html: question }}></p>
           <div className="flashcard-float">
             <FaRegHandPointRight size={30} />
           </div>
         </div>
         <div className={`flashcard-answer ${className ?? ''}`}>
-          <p>{answer}</p>
+          <p dangerouslySetInnerHTML={{ __html: answer }}></p>
         </div>
       </div>
     </div>

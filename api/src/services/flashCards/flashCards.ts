@@ -2,7 +2,10 @@ import type { BeforeResolverSpecType } from '@redwoodjs/api'
 import { requireAuth } from 'src/lib/auth'
 import { db } from 'src/lib/db'
 
-type GetFlashCardsPayload = Parameters<typeof db.flashCard.findMany>[0]
+type GetFlashCardsPayload = Omit<
+  Parameters<typeof db.flashCard.findMany>[0],
+  'select' | 'where'
+> & { tags?: Array<string> }
 type CreateFlashCardPayload = Omit<
   Parameters<typeof db.flashCard.create>[0],
   'select'
@@ -18,8 +21,15 @@ export const beforeResolver = (rules: BeforeResolverSpecType) => {
   rules.add(requireAuth)
 }
 
-export const flashCards = (args?: GetFlashCardsPayload) => {
-  return db.flashCard.findMany(args)
+export const flashCards = ({ tags, ...args }: GetFlashCardsPayload) => {
+  const where = tags
+    ? { OR: tags.map((tag) => ({ tags: { contains: tag } })) }
+    : {}
+
+  return db.flashCard.findMany({
+    ...args,
+    where,
+  })
 }
 
 export const createFlashCard = ({ data }: CreateFlashCardPayload) => {

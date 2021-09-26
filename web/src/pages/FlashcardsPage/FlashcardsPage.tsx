@@ -6,10 +6,13 @@ import { mergeClassName } from 'src/utils'
 // TODO: Move to global level
 const TAGS = [
   'favorite',
+  'wine 101',
   'random',
+  'storage',
+  'food pairing',
+  'temperature',
   'tasting',
-  'pairing',
-  'winemaking',
+  'wine making',
   'white',
   'red',
   'sparkling',
@@ -64,7 +67,11 @@ const FlashcardsPage = () => {
         ))}
       </div>
       <div className="sm:flex sm:justify-center my-20">
-        <FlashCardsCell />
+        {currentTag === 'favorite' ? (
+          <FlashCardsCell take={0} />
+        ) : (
+          <FlashCardsCell tags={[currentTag]} />
+        )}
       </div>
     </>
   )

@@ -7,8 +7,8 @@ import type { FlashCardsQuery } from 'types/graphql'
 import FlashCard from '../FlashCard/FlashCard'
 
 export const QUERY = gql`
-  query FlashCardsQuery($take: Int) {
-    flashCards(take: $take) {
+  query FlashCardsQuery($tags: [String!], $take: Int) {
+    flashCards(tags: $tags, take: $take) {
       id
       tags
       answer
@@ -79,7 +79,7 @@ export const Success = ({ flashCards }: CellSuccessProps<FlashCardsQuery>) => {
           <FlashCard
             answer={answer}
             question={question}
-            className="bg-base-100 font-mono"
+            className="bg-base-100 font-open-sans"
           />
         </div>
       ))}
