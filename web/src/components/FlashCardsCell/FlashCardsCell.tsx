@@ -1,5 +1,5 @@
 import type { CellFailureProps, CellSuccessProps } from '@redwoodjs/web'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { BiMessageRoundedError } from 'react-icons/bi'
 import { ImFileEmpty } from 'react-icons/im'
 import { mergeClassName } from 'src/utils'
@@ -48,6 +48,17 @@ export const Failure = ({ error }: CellFailureProps) => (
 export const Success = ({ flashCards }: CellSuccessProps<FlashCardsQuery>) => {
   const [position, setPosition] = useState(0)
   const ref = useRef<HTMLDivElement>()
+  const flashcardGroups = useMemo(
+    () =>
+      flashCards.reduce((prev, flashcard, index) => {
+        const group = Math.floor(index / 20)
+
+        prev[group] = prev[group] || []
+        prev[group].push(flashcard)
+        return prev
+      }, []),
+    [flashCards]
+  )
 
   useEffect(
     () => {
@@ -67,33 +78,39 @@ export const Success = ({ flashCards }: CellSuccessProps<FlashCardsQuery>) => {
   )
 
   return (
-    <div
-      ref={ref}
-      className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
-    >
-      {flashCards.map(({ id, answer, question }) => (
+    <div className="flex gap-6 flex-wrap justify-center">
+      {flashcardGroups.map((group, index) => (
         <div
-          key={id}
-          className="carousel-item w-full mt-6 flex-col items-center"
+          ref={ref}
+          key={index}
+          style={{ minWidth: '320px' }}
+          className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
         >
-          <FlashCard
-            answer={answer}
-            question={question}
-            className="bg-base-100 font-open-sans"
-          />
+          {group.map(({ id, answer, question }) => (
+            <div
+              key={id}
+              className="carousel-item w-full mt-6 flex-col items-center"
+            >
+              <FlashCard
+                answer={answer}
+                question={question}
+                className="bg-base-100 font-open-sans"
+              />
+            </div>
+          ))}
+          <div className="sticky flex items-end right-1/2 transform translate-x-1/2 mb-6">
+            {group.map((_, index) => (
+              <div
+                key={index}
+                className={mergeClassName(
+                  'h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200',
+                  position !== index && 'opacity-20'
+                )}
+              ></div>
+            ))}
+          </div>
         </div>
       ))}
-      <div className="sticky flex items-end right-1/2 transform translate-x-1/2 mb-6">
-        {flashCards.map((_, index) => (
-          <div
-            key={index}
-            className={mergeClassName(
-              'h-3 w-1 rounded-sm bg-accent mx-0.5 transform transition-opacity duration-200',
-              position !== index && 'opacity-20'
-            )}
-          ></div>
-        ))}
-      </div>
     </div>
   )
 }

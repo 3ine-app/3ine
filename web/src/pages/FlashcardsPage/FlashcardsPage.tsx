@@ -5,10 +5,13 @@ import { mergeClassName } from 'src/utils'
 
 // TODO: Move to global level
 const TAGS = [
-  'favorite',
   'grape',
   'region',
+  'colour',
+  'sat',
+  'aroma',
   'terroir',
+  'tasting',
   'labelling',
   'appellation',
   'stainless steel',
@@ -29,15 +32,15 @@ const TAGS = [
   'maturation',
   'secondary',
   'botrytis',
-  'sparkling',
-  'fortified',
   'wine 101',
-  'random',
   'storage',
   'ageing',
 ]
 const FlashcardsPage = () => {
-  const [currentTag, setCurrentTag] = useState(TAGS[0])
+  const randomIndex = Math.floor(Math.random() * TAGS.length)
+  const [currentTags, setCurrentTags] = useState(
+    TAGS.slice(randomIndex, randomIndex + 1)
+  )
 
   return (
     <>
@@ -47,47 +50,28 @@ const FlashcardsPage = () => {
         /* you should un-comment description and add a unique description, 155 characters or less
         You can look at this documentation for best practices : https://developers.google.com/search/docs/advanced/appearance/good-titles-snippets */
       />
-      <div className="carousel rounded-box shadow-2xl">
+      <div className="flex gap-2 flex-wrap">
         {TAGS.map((tag, index) => (
-          <div key={index} className="carousel-item">
-            <div className="stack my-8 mx-2 font-gruppo">
-              <button
-                onClick={() => {
-                  setCurrentTag(tag)
-                }}
-                className={mergeClassName(
-                  'rounded-xl text-primary-content hover:bg-primary-focus',
-                  currentTag === tag ? 'bg-primary-focus' : 'bg-primary'
-                )}
-              >
-                <div className="py-6 text-shadow capitalize">{tag}</div>
-              </button>
-              <div
-                className={mergeClassName(
-                  'text-center w-36 card bg-primary text-primary-content',
-                  currentTag === tag && 'animate-pulse'
-                )}
-              >
-                <div className="py-6 capitalize">{tag}</div>
-              </div>
-              <div
-                className={mergeClassName(
-                  'text-center w-36 card bg-primary text-primary-content',
-                  currentTag === tag && 'animate-pulse'
-                )}
-              >
-                <div className="py-6 capitalize">{tag}</div>
-              </div>
-            </div>
-          </div>
+          <button
+            key={`tag-btn-${index}`}
+            className={mergeClassName(
+              'btn btn-xs md:btn-sm lg:btn-md btn-primary rounded-lg md:rounded-xl lg:rounded-2xl',
+              currentTags.includes(tag) ? 'btn-active' : 'btn-outline'
+            )}
+            onClick={() => {
+              if (currentTags.includes(tag)) {
+                setCurrentTags(currentTags.filter((t) => t !== tag))
+              } else {
+                setCurrentTags([...currentTags, tag])
+              }
+            }}
+          >
+            {tag}
+          </button>
         ))}
       </div>
-      <div className="sm:flex sm:justify-center my-20">
-        {currentTag === 'favorite' ? (
-          <FlashCardsCell take={0} />
-        ) : (
-          <FlashCardsCell tags={[currentTag]} />
-        )}
+      <div className="my-20 flex justify-center">
+        <FlashCardsCell tags={currentTags} />
       </div>
     </>
   )
