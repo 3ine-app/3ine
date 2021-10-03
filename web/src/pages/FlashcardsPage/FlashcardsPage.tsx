@@ -35,6 +35,8 @@ const TAGS = [
   'wine 101',
   'storage',
   'ageing',
+  'sparkling',
+  'fortified',
 ]
 const FlashcardsPage = () => {
   const randomIndex = Math.floor(Math.random() * TAGS.length)
