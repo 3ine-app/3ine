@@ -556,19 +556,19 @@ Object {
             class="sticky flex items-end right-1/2 transform translate-x-1/2 mb-6"
           >
             <div
-              class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200"
+              class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200"
             />
             <div
-              class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+              class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
             />
             <div
-              class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+              class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
             />
             <div
-              class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+              class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
             />
             <div
-              class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+              class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
             />
           </div>
         </div>
@@ -802,19 +802,19 @@ Object {
           class="sticky flex items-end right-1/2 transform translate-x-1/2 mb-6"
         >
           <div
-            class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200"
+            class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200"
           />
           <div
-            class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+            class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
           />
           <div
-            class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+            class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
           />
           <div
-            class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+            class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
           />
           <div
-            class="h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200 opacity-20"
+            class="h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200 opacity-20"
           />
         </div>
       </div>
