@@ -7,6 +7,7 @@ Object {
     <div>
       <div
         class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+        style="min-width: 320px;"
       >
         <div
           class="flashcard glass mx-auto mt-5 rounded-xl"
@@ -38,6 +39,7 @@ Object {
   "container": <div>
     <div
       class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+      style="min-width: 320px;"
     >
       <div
         class="flashcard glass mx-auto mt-5 rounded-xl"
@@ -126,6 +128,7 @@ Object {
     <div>
       <div
         class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+        style="min-width: 320px;"
       >
         <div
           class="flashcard glass mx-auto mt-5 rounded-xl"
@@ -159,6 +162,7 @@ Object {
   "container": <div>
     <div
       class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+      style="min-width: 320px;"
     >
       <div
         class="flashcard glass mx-auto mt-5 rounded-xl"
@@ -249,6 +253,7 @@ Object {
     <div>
       <div
         class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+        style="min-width: 320px;"
       >
         <div
           class="flashcard bg-base-100 mx-auto mt-5 rounded-xl animate-pulse"
@@ -259,6 +264,7 @@ Object {
   "container": <div>
     <div
       class="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+      style="min-width: 320px;"
     >
       <div
         class="flashcard bg-base-100 mx-auto mt-5 rounded-xl animate-pulse"

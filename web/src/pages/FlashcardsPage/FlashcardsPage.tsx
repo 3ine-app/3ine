@@ -8,7 +8,7 @@ const TAGS = [
   'grape',
   'region',
   'colour',
-  'sat',
+  'SAT',
   'aroma',
   'terroir',
   'tasting',
@@ -52,28 +52,52 @@ const FlashcardsPage = () => {
         /* you should un-comment description and add a unique description, 155 characters or less
         You can look at this documentation for best practices : https://developers.google.com/search/docs/advanced/appearance/good-titles-snippets */
       />
-      <div className="flex gap-2 flex-wrap">
-        {TAGS.map((tag, index) => (
-          <button
-            key={`tag-btn-${index}`}
-            className={mergeClassName(
-              'btn btn-xs md:btn-sm lg:btn-md btn-primary rounded-lg md:rounded-xl lg:rounded-2xl',
-              currentTags.includes(tag) ? 'btn-active' : 'btn-outline'
-            )}
-            onClick={() => {
-              if (currentTags.includes(tag)) {
-                setCurrentTags(currentTags.filter((t) => t !== tag))
-              } else {
-                setCurrentTags([...currentTags, tag])
-              }
-            }}
-          >
-            {tag}
-          </button>
-        ))}
+      <div className="flex flex-wrap">
+        <div className="collapse rounded-box collapse-arrow shadow-xl">
+          <input type="checkbox" />
+          <div className="collapse-title text-xl font-medium pr-8">
+            {currentTags.map((tag, index) => (
+              <div
+                key={`badge-${index}`}
+                className="badge shadow-md badge-sm md:badge-md lg:badge-lg capitalize mx-0.5"
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
+          <div className="collapse-content flex flex-wrap">
+            {TAGS.map((tag, index) => (
+              <div className="form-control" key={`tag-checkbox-${index}`}>
+                <label className="cursor-pointer label">
+                  <input
+                    type="checkbox"
+                    name="flashCardTags"
+                    checked={currentTags.includes(tag)}
+                    onChange={() => {
+                      if (currentTags.includes(tag)) {
+                        setCurrentTags(currentTags.filter((t) => t !== tag))
+                      } else {
+                        setCurrentTags([...currentTags, tag])
+                      }
+                    }}
+                    className="checkbox-xs md:checkbox-sm lg:checkbox-md checkbox checkbox-neutral rounded-full"
+                  />
+                  <span
+                    className={mergeClassName(
+                      'label-text capitalize ml-1 mr-2 text-xs md:text-sm',
+                      currentTags.includes(tag) ? 'text-shadow' : ''
+                    )}
+                  >
+                    {tag}
+                  </span>
+                </label>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      <div className="my-20 flex justify-center">
-        <FlashCardsCell tags={currentTags} />
+      <div className="mt-10 mb-20 flex justify-center">
+        <FlashCardsCell tags={currentTags.map((t) => t.toLowerCase())} />
       </div>
     </>
   )
