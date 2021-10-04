@@ -54,7 +54,7 @@ const FlashcardsPage = () => {
       />
       <div className="flex flex-wrap">
         <div className="collapse rounded-box collapse-arrow shadow-xl">
-          <input type="checkbox" />
+          <input type="checkbox" defaultChecked />
           <div className="collapse-title text-xl font-medium pr-8">
             {currentTags.map((tag, index) => (
               <div

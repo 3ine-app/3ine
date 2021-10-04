@@ -16,9 +16,9 @@
     ]
   },
   "dependencies": {
-    "@redwoodjs/forms": "^0.36.2",
-    "@redwoodjs/router": "^0.36.2",
-    "@redwoodjs/web": "^0.36.2",
+    "@redwoodjs/forms": "^0.37.1",
+    "@redwoodjs/router": "^0.37.1",
+    "@redwoodjs/web": "^0.37.1",
     "daisyui": "^1.14.2",
     "medium-editor": "^5.23.3",
     "prop-types": "15.7.2",

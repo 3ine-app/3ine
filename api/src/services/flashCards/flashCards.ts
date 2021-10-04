@@ -1,4 +1,4 @@
-import type { BeforeResolverSpecType } from '@redwoodjs/api'
+import { BeforeResolverSpecType } from '@redwoodjs/graphql-server'
 import { requireAuth } from 'src/lib/auth'
 import { db } from 'src/lib/db'
 

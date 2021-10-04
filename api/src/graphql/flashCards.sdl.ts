@@ -9,13 +9,14 @@ export const schema = gql`
   }
 
   type Query {
-    flashCards(tags: [String!], take: Int): [FlashCard!]!
+    flashCards(tags: [String!], take: Int): [FlashCard!]! @skipAuth
   }
 
   type Mutation {
     updateFlashCard(id: String!, data: UpdateFlashCardInput): FlashCard!
-    createFlashCard(data: CreateFlashCardInput!): FlashCard!
-    deleteFlashCard(id: String!): Boolean!
+      @requireAuth
+    createFlashCard(data: CreateFlashCardInput!): FlashCard! @requireAuth
+    deleteFlashCard(id: String!): Boolean! @requireAuth
   }
 
   input CreateFlashCardInput {

@@ -48,7 +48,7 @@ const FlashCards = ({ flashCards }: CellSuccessProps<FlashCardsQuery>) => {
           <div
             key={`flashcards-cell-${index}`}
             className={mergeClassName(
-              'h-3 w-1 rounded-sm bg-base-200 mx-0.5 transform transition-opacity duration-200',
+              'h-3 w-1 rounded-sm bg-base-100 mx-0.5 transform transition-opacity duration-200',
               position !== index && 'opacity-20'
             )}
           ></div>
