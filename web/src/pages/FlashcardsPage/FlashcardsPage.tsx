@@ -23,9 +23,6 @@ const TAGS = [
   'white',
   'red',
   'sweet',
-  'chardonnay',
-  'riesling',
-  'sauvignon blanc',
   'palates',
   'blending',
   'vintage',
@@ -37,6 +34,11 @@ const TAGS = [
   'ageing',
   'sparkling',
   'fortified',
+  'pinot noir',
+  'zinfandel',
+  'chardonnay',
+  'riesling',
+  'sauvignon blanc',
 ]
 const FlashcardsPage = () => {
   const randomIndex = Math.floor(Math.random() * TAGS.length)
@@ -59,7 +61,7 @@ const FlashcardsPage = () => {
             {currentTags.map((tag, index) => (
               <div
                 key={`badge-${index}`}
-                className="badge shadow-md badge-sm md:badge-md lg:badge-lg capitalize mx-0.5"
+                className="badge badge-secondary shadow-md badge-sm md:badge-md lg:badge-lg capitalize mx-0.5"
               >
                 {tag}
               </div>
