@@ -29,7 +29,7 @@ const FlashCards = ({ flashCards }: CellSuccessProps<FlashCardsQuery>) => {
     <div
       ref={ref}
       style={{ minWidth: '320px' }}
-      className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+      className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-secondary"
     >
       {flashCards.map(({ id, answer, question }) => (
         <div

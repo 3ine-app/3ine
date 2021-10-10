@@ -19,7 +19,7 @@ export const QUERY = gql`
 export const Loading = () => (
   <div
     style={{ minWidth: '320px' }}
-    className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+    className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-secondary"
   >
     <div className="flashcard bg-base-100 mx-auto mt-5 rounded-xl animate-pulse"></div>
   </div>
@@ -28,7 +28,7 @@ export const Loading = () => (
 export const Empty = () => (
   <div
     style={{ minWidth: '320px' }}
-    className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+    className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-secondary"
   >
     <div className="flashcard glass mx-auto mt-5 rounded-xl">
       <div className="flex flex-col items-center justify-center h-full text-primary-content">
@@ -42,7 +42,7 @@ export const Empty = () => (
 export const Failure = ({ error }: CellFailureProps) => (
   <div
     style={{ minWidth: '320px' }}
-    className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-primary"
+    className="carousel flashcards rounded-box bg-gradient-to-t from-neutral to-secondary"
   >
     <div className="flashcard glass mx-auto mt-5 rounded-xl">
       <div className="flex flex-col items-center justify-center h-full text-primary-content">
