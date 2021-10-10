@@ -6,7 +6,10 @@ import { RiCalendarEventLine } from 'react-icons/ri'
 const AboutPage = () => {
   return (
     <>
-      <MetaTags title="About" description="3ine.app: About us" />
+      <MetaTags
+        title="About"
+        description="Wine or 3 wine? Whatever you would like to call it, we provide quintessential knowledge of wine in 3 Ws for free. Yes, everything you want or need to know about wine to help you become savvy, to pick good bottles for your lovely night with your significant one or friends at a fancy restaurant or even paving your way to become professional."
+      />
       <div className="about-title">
         <div>
           <div>3ine</div>

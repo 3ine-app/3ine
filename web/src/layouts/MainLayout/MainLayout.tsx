@@ -1,4 +1,3 @@
-import { useIsBrowser } from '@redwoodjs/prerender/browserUtils'
 import { Link, NavLink, routes, useLocation, useMatch } from '@redwoodjs/router'
 import { FC, useMemo } from 'react'
 import { FaTwitter } from 'react-icons/fa'
@@ -12,26 +11,20 @@ type MainLayoutProps = {
   children?: React.ReactNode
 }
 
-const Logo = () => {
-  const brandName = document
-    .getElementsByTagName('meta')
-    .namedItem('brandName')?.content
-
-  return (
-    <div className="flex items-center">
-      <img
-        width="60"
-        height="60"
-        loading="lazy"
-        alt="3ine Footer Logo"
-        src="images/icon-192x192.png"
-      />
-      <div className="ml-3 text-xl font-extrabold font-gruppo text-shadow">
-        {brandName}
-      </div>
+const Logo = () => (
+  <div className="flex items-center">
+    <img
+      width="60"
+      height="60"
+      loading="lazy"
+      alt="3ine Footer Logo"
+      src="images/icon-192x192.png"
+    />
+    <div className="ml-3 text-xl font-extrabold font-gruppo text-shadow">
+      3ine.app
     </div>
-  )
-}
+  </div>
+)
 
 const CustomNavLink: FC<{ to: string }> = ({ to, children }) => {
   const { match } = useMatch(to)
@@ -47,7 +40,6 @@ const CustomNavLink: FC<{ to: string }> = ({ to, children }) => {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   const current = new Date()
-  const browser = useIsBrowser()
   const { pathname } = useLocation()
   const isWhyActive = useMemo(
     () => ['/flashcards'].includes(pathname),
@@ -121,7 +113,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
         </main>
         <footer className="p-10 footer flex items-center flex-col-reverse sm:flex-row bg-gradient-to-t from-neutral to-base-100">
           <div className="flex-1 place-items-center sm:place-items-start">
-            {browser ? <Logo /> : null}
+            <Logo />
             <p className="font-medium text-shadow-light">
               Copyright © {current.getFullYear()} - All right reserved
             </p>
@@ -147,7 +139,9 @@ const MainLayout = ({ children }: MainLayoutProps) => {
         <ul className="p-4 overflow-y-auto menu w-80 bg-base-100">
           <li className="pt-2 pb-4">
             <div className="flex items-center">
-              <div className="flex-1">{browser ? <Logo /> : null}</div>
+              <div className="flex-1">
+                <Logo />
+              </div>
               <label
                 htmlFor="menu-drawer"
                 className="btn btn-square btn-ghost "

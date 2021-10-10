@@ -10,20 +10,5 @@ module.exports = (config, { mode }) => {
   // Add custom plugins for your project
   // config.plugins.push(YOUR_PLUGIN)
 
-  config.plugins.forEach((plugin) => {
-    if (plugin.constructor.name === 'HtmlWebpackPlugin') {
-      plugin.userOptions.title = process.env.npm_package_displayName
-      plugin.userOptions.templateParameters = {
-        brandName: process.env.npm_package_displayName,
-        ogUrl: process.env.npm_package_homepage,
-        ogTitle: process.env.npm_package_displayName,
-        ogDescription: process.env.npm_package_description,
-        ogImage: '/images/icon-1080x1080.png',
-        manifest: '/manifest.webmanifest',
-        ...plugin.userOptions.templateParameters,
-      }
-    }
-  })
-
   return config
 }

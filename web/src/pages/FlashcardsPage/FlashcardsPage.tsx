@@ -48,12 +48,7 @@ const FlashcardsPage = () => {
 
   return (
     <>
-      <MetaTags
-        title="Flashcards"
-        // description="Flashcards description"
-        /* you should un-comment description and add a unique description, 155 characters or less
-        You can look at this documentation for best practices : https://developers.google.com/search/docs/advanced/appearance/good-titles-snippets */
-      />
+      <MetaTags title="Flashcards" description="WSET Level 2 flashcards" />
       <div className="flex flex-wrap">
         <div className="collapse rounded-box collapse-arrow shadow-xl">
           <input type="checkbox" defaultChecked />
