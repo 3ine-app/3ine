@@ -9,6 +9,8 @@
 
 import { Route, Router, Set } from '@redwoodjs/router'
 import MainLayout from './layouts/MainLayout/MainLayout'
+import AboutPage from './pages/AboutPage/AboutPage'
+import HomePage from './pages/HomePage/HomePage'
 
 const Routes = () => {
   return (
