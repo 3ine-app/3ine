@@ -39,6 +39,12 @@ const TAGS = [
   'chardonnay',
   'riesling',
   'sauvignon blanc',
+  'chenin blanc',
+  'semillon',
+  'pinot gris',
+  'gewurztraminer',
+  'viognier',
+  'merlot',
 ]
 const FlashcardsPage = () => {
   const randomIndex = Math.floor(Math.random() * TAGS.length)
