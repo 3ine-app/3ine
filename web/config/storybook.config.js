@@ -1,4 +1,5 @@
 module.exports = {
+  typescript: { reactDocgen: false },
   addons: [
     '@storybook/addon-docs',
     '@storybook/addon-actions',

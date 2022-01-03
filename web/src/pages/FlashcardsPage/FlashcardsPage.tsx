@@ -54,7 +54,11 @@ const FlashcardsPage = () => {
 
   return (
     <>
-      <MetaTags title="Flashcards" description="WSET Level 2 flashcards" />
+      <MetaTags
+        title="WSET Flashcards"
+        ogContentUrl="https://logo.clearbit.com/wsetglobal.com"
+        description="A collection of WSET flashcards help you to effortlessly revise before your exam."
+      />
       <div className="flex flex-wrap">
         <div className="collapse rounded-box collapse-arrow shadow-xl">
           <input type="checkbox" defaultChecked />
@@ -62,7 +66,7 @@ const FlashcardsPage = () => {
             {currentTags.map((tag, index) => (
               <div
                 key={`badge-${index}`}
-                className="badge badge-secondary shadow-md badge-sm md:badge-md lg:badge-lg capitalize mx-0.5"
+                className="badge badge-neutral badge-outline shadow-md badge-sm md:badge-md lg:badge-lg capitalize mx-0.5"
               >
                 {tag}
               </div>

@@ -20,5 +20,5 @@ export const logger = createLogger({
   // We can extend to avoid logging sensitive data
   // https://redwoodjs.com/docs/logger.html#redaction
   // options: { redact: redactionsList }
-  options: { level: 'info', prettyPrint: true },
+  options: { level: 'info' },
 })

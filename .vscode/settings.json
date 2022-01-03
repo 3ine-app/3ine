@@ -27,5 +27,6 @@
   "prettier.printWidth": 120,
   "editor.quickSuggestions": {
     "strings": true
-  }
+  },
+  "cSpell.words": ["WSET"]
 }
