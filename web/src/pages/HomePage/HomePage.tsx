@@ -27,7 +27,7 @@ const HomePage = () => {
             manipulate your taste. Thus, we provide what we believe the three
             pivot wheels to help you taking control of your wine experience.
           </p>
-          <Link to={routes.about()} className="btn">
+          <Link to={routes.flashcards()} className="btn">
             Get Started
           </Link>
         </div>
